@@ -1,0 +1,21 @@
+# Корневой файл EditorConfig
+root = true
+
+[**]
+# Позволяет выбрать, что использовать на концах строк lf, cr, crlf
+end_of_line = lf
+# Позволяет убедиться, что в конце файла всегда будет новая строка.
+insert_final_newline = true
+# Позволяет убрать пробелы из концов строк.
+trim_trailing_whitespace = true
+
+# Настройки для php
+[**.php]
+indent_style = space
+indent_size = 4
+
+# Сторонние библиотеки. В них ничего не меняем
+[vendor/**]
+indent_style = ignore
+trim_trailing_whitespace = false
+insert_final_newline = ignore
